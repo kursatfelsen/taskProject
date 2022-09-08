@@ -44,7 +44,7 @@ class TaskDetailApiView(APIView):
         task_instance = self.get_object(task_id)
         if not task_instance:
             return Response(
-                {"res": "Object with task id does not exists"},
+                {"response": "Object with task id does not exists"},
                 status=status.HTTP_400_BAD_REQUEST
             )
 
@@ -56,7 +56,7 @@ class TaskDetailApiView(APIView):
         task_instance = self.get_object(task_id)
         if not task_instance:
             return Response(
-                {"res": "Object with task id does not exists"},
+                {"response": "Object with task id does not exists"},
                 status=status.HTTP_400_BAD_REQUEST
             )
         data = {
@@ -76,13 +76,13 @@ class TaskDetailApiView(APIView):
         task_instance = self.get_object(task_id)
         if not task_instance:
             return Response(
-                {"res": "Object with task id does not exists"},
+                {"response": "Object with task id does not exists"},
                 status=status.HTTP_400_BAD_REQUEST
             )
         task_instance.is_active = False
         task_instance.save()
 
         return Response(
-            {"res": "Object deleted!"},
+            {"response": "Object deleted!"},
             status=status.HTTP_200_OK
         )
