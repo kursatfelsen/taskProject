@@ -17,7 +17,7 @@
 
 ### Request
 
-`GET /tasks/api/`
+`GET tasks/api`
 
 ### Response
 
@@ -35,7 +35,7 @@
 
 ### Request
 
-`GET /task/api/id`
+`GET /tasks/api/id`
 
 ### Response
 
@@ -57,7 +57,7 @@ Vary: Accept
 
 ### Request
 
-`GET /api/1`
+`GET tasks/api/1`
 
 ### Response
 
@@ -119,7 +119,7 @@ Vary: Accept
 
 ### Request
 
-`DELETE /api/id/`
+`DELETE tasks/api/id/`
 
 ### Response
 
